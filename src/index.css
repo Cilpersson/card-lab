@@ -1,13 +1,170 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+} */
+
+h1 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	line-height: 82px;
+	margin: 0;
+
+	color: #166f39;
+}
+
+h2 {
+	font-family: Lora;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 47px;
+	text-align: center;
+	margin: 0;
+
+	color: #000000;
+}
+
+.emoji {
+	font-size: 70px;
+}
+
+.card-container {
+	width: 371px;
+	height: 372px;
+	border-radius: 8px;
+}
+
+.title-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 30px;
+	height: 126px;
+	width: 371px;
+	border-radius: 8px 8px 0 0;
+	box-sizing: border-box;
+}
+
+.light-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 30px;
+	border-radius: 0 0 8px 8px;
+	position: absolute;
+	width: 371px;
+	height: 246px;
+
+	box-sizing: border-box;
+}
+
+button {
+	width: 311px;
+	height: 50px;
+
+	background: #fced84;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+	border: none;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.h1-two {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	line-height: 82px;
+
+	color: #166f39;
+	background: #8cffba;
+
+	width: 371px;
+	height: 186px;
+	/* margin: 0 auto; */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px 8px 0 0;
+}
+
+.emoji-two {
+	font-size: 70px;
+	margin: auto;
+	background: #cfffe2;
+	width: 371px;
+	height: 186px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 0 8px 8px;
+}
+
+.card-container-two {
+	width: 371px;
+	height: 372px;
+	border-radius: 8px;
+	position: relative;
+}
+
+.h1-two:hover {
+	border-radius: 8px;
+	position: absolute;
+	height: 372px;
+	bottom: 0;
+	/* animation: expand-down 1s; */
+}
+
+.emoji-two:hover {
+	border-radius: 8px;
+	position: absolute;
+	height: 372px;
+	top: 0;
+	/* animation: expand-up 1s; */
+}
+
+@keyframes expand-up {
+	0% {
+		bottom: 372px;
+	}
+
+	50% {
+		bottom: 186px;
+	}
+
+	100% {
+		bottom: 0;
+	}
+}
+
+@keyframes expand-down {
+	0% {
+		top: 372px;
+	}
+
+	50% {
+		top: 186px;
+	}
+
+	100% {
+		top: 0;
+	}
 }
