@@ -9,19 +9,11 @@ export const Card = ({
 	primaryClr,
 	secondaryClr,
 	btnClr,
-	clicked,
-	setClicked,
 	titleClr,
 	subClr,
-	btnTxtClr
+	btnTxtClr,
+	onClick
 }) => {
-	const changeState = (event) => {
-		event.preventDefault();
-		if (!clicked) {
-			setClicked(true);
-		}
-	};
-
 	return (
 		<article style={{ backgroundColor: primaryClr }} className="card-container">
 			<div className="title-container">
@@ -44,7 +36,7 @@ export const Card = ({
 				>
 					{subtitle}
 				</h2>
-				<button type="button " onClick={changeState} style={{ backgroundColor: btnClr, color: btnTxtClr }}>
+				<button type="button " onClick={onClick} style={{ backgroundColor: btnClr, color: btnTxtClr }}>
 					{buttonText}
 				</button>
 			</div>

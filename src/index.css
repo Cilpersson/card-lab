@@ -11,6 +11,14 @@ body {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 } */
 
+.App {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+
 h1 {
 	font-family: Roboto;
 	font-style: normal;
@@ -86,85 +94,72 @@ button {
 	line-height: 35px;
 }
 
-.h1-two {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 70px;
-	line-height: 82px;
-
-	color: #166f39;
-	background: #8cffba;
-
-	width: 371px;
-	height: 186px;
-	/* margin: 0 auto; */
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 8px 8px 0 0;
-}
-
-.emoji-two {
-	font-size: 70px;
-	margin: auto;
-	background: #cfffe2;
-	width: 371px;
-	height: 186px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 0 0 8px 8px;
-}
+/* STYLING FOR CARDONCLICK */
 
 .card-container-two {
 	width: 371px;
 	height: 372px;
-	border-radius: 8px;
-	position: relative;
 }
 
-.h1-two:hover {
-	border-radius: 8px;
+.title-container-two {
+	width: 371px;
+	height: 186px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 8px 8px 0 0;
+	transition: all 0.8s ease-in-out;
+
 	position: absolute;
-	height: 372px;
-	bottom: 0;
-	/* animation: expand-down 1s; */
+	z-index: 2;
+
+	/* position: absolute; */
 }
 
-.emoji-two:hover {
-	border-radius: 8px;
+.emoji-container-two {
+	width: 371px;
+	height: 186px;
+
+	margin-top: 186px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 0 0 8px 8px;
+	transition: all 0.8s ease-in-out;
+
 	position: absolute;
+	z-index: 2;
+
+	/* position: absolute; */
+}
+
+.h1-two {
+	font-family: Roboto;
+	font-size: 70px;
+}
+
+.emoji-two {
+	font-size: 90px;
+}
+
+.title-container-two:hover {
 	height: 372px;
-	top: 0;
-	/* animation: expand-up 1s; */
+	position: absolute;
+	border-radius: 8px;
+
+	z-index: 10;
 }
 
-@keyframes expand-up {
-	0% {
-		bottom: 372px;
-	}
+.emoji-container-two:hover {
+	height: 372px;
+	position: absolute;
+	border-radius: 8px;
 
-	50% {
-		bottom: 186px;
-	}
+	margin-top: 0;
 
-	100% {
-		bottom: 0;
-	}
-}
-
-@keyframes expand-down {
-	0% {
-		top: 372px;
-	}
-
-	50% {
-		top: 186px;
-	}
-
-	100% {
-		top: 0;
-	}
+	z-index: 10;
 }
