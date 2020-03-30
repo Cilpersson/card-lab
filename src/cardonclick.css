@@ -1,0 +1,64 @@
+.card-container-two {
+	width: 371px;
+	height: 372px;
+	border-radius: 8px;
+}
+
+.title-container-two {
+	width: 371px;
+	height: 186px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 8px 8px 0 0;
+	transition: all 0.8s ease-in-out;
+
+	position: absolute;
+	z-index: 2;
+}
+
+.emoji-container-two {
+	width: 371px;
+	height: 186px;
+
+	margin-top: 186px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 0 0 8px 8px;
+	transition: all 0.8s ease-in-out;
+
+	position: absolute;
+	z-index: 2;
+}
+
+.h1-two {
+	font-family: Roboto;
+	font-size: 70px;
+}
+
+.emoji-two {
+	font-size: 90px;
+}
+
+.title-container-two:hover {
+	height: 372px;
+	position: absolute;
+	border-radius: 8px;
+
+	z-index: 10;
+}
+
+.emoji-container-two:hover {
+	height: 372px;
+	position: absolute;
+	border-radius: 8px;
+
+	margin-top: 0;
+
+	z-index: 10;
+}

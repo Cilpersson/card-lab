@@ -1,4 +1,5 @@
 import React from 'react';
+import './cardonclick.css';
 
 export const CardOnClick = ({ title, emoji, primaryClr, secondaryClr, btnClr, titleClr, subClr }) => {
 	return (
